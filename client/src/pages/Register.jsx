@@ -23,7 +23,7 @@ export default function Register() {
             else{
                 setData({})
                 toast.success('login successful')
-                navigate('/home')
+                navigate('/')
             }
         }
         catch (error) {
