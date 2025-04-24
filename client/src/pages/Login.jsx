@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import axios from 'axios';
+import './login.css';
 
 export default function Login() {
   const [data, setData] = useState({
@@ -13,8 +14,8 @@ export default function Login() {
   }
 
   return (
-    <div>
-      <form onSubmit={loginUser}>
+    <div className='login-container'>
+      <form onSubmit={loginUser} className='login-form'>
       <label>E-mail</label>
             <input type='email' placeholder='E-mail' value={data.email} onChange={(event) => setData({...data, email: event.target.value})} />
             <label>Password</label>
