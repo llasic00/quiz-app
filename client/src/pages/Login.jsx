@@ -1,6 +1,5 @@
 import { useState } from 'react'
 import axios from 'axios';
-import './login.css';
 
 export default function Login() {
   const [data, setData] = useState({

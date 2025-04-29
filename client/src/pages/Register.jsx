@@ -17,14 +17,14 @@ export default function Register() {
         try {
             const {data} = await axios.post('/register', {name, email, password})
         
-            if(data.error){
+            /*if(data.error){
                 toast.error(data.error)
             }
             else{
                 setData({})
                 toast.success('login successful')
                 navigate('/')
-            }
+            }*/
         }
         catch (error) {
             console.log(error)
